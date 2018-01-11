@@ -1,15 +1,20 @@
 /* Global Layout Set-up */
-* { 
+* {
   box-sizing: border-box;
 }
-  
+
 body {
   margin: 0;
   padding: 0;
   text-align: center;
   font-family: 'Roboto', sans-serif;
   color: #222;
-  background: #f7f5f0;
+  background: #e28f00;
+}
+
+h2,
+p {
+  color: #e28f00;
 }
 /* Link Styles */
 
@@ -43,21 +48,24 @@ a:hover {
 .nav .name {
     display: block;
     margin-right: auto;
-    color: white;
+    color: #e28f00;
 }
 .nav li {
   padding: 5px 10px 10px 10px;
 }
 .nav a {
   transition: all .5s;
+  color:#e28f00;
 }
 .nav a:hover {
-  color: white
+  color: #ffcb72
 }
 
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  background:
+              linear-gradient(0deg, #e28f00, transparent),
+              url('images/winterfell.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -70,36 +78,36 @@ header .profile-image {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid white;
+  border: 3px solid #e28f00;
   transition: all .5s;
 }
 header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
 }
 .tag {
-  background-color: #efefef;
+  background-color: #e28f00;
   color: black;
   padding: 10px;
   border-radius: 5px;
   display: table;
   margin: 10px auto;
-} 
+}
 .location {
-  background-color: #222;
-  color: yellow;
+  background-color: black;
+  color: #e28f00;
 }
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
   max-width: 500px;
   text-align: left;
-  background: #fff;
-  border-bottom: 4px solid #ccc;
+  background: black;
+  border-bottom: 4px solid #776f61;
   border-radius: 6px;
   transition: all .5s;
 }
 .card:hover {
-  border-color: #ff99ff;
+  background: #302d28;
 }
 
 ul.skills {
@@ -110,14 +118,14 @@ ul.skills {
 .skills li {
   border-radius: 6px;
   display: inline-block;
-  background: #ff9904;
+  background: #776f61;
   color: white;
   padding: 5px 10px;
   margin: 2px;
 }
 
 .skills li:nth-child(odd) {
-  background: #0399ff;
+  background: #e28f00;
 }
 
 footer {
@@ -129,6 +137,7 @@ footer {
 footer .copyright {
   top: -8px;
   font-size: .75em;
+  color: black;
 }
 
 footer ul {
@@ -153,6 +162,7 @@ a.social {
 }
 a.twitter {
   background-image: url(images/twitter.svg);
+
 }
 a.linkedin {
   background-image: url(images/linkedin.svg);
@@ -167,12 +177,23 @@ a.social:hover {
   clear: both;
 }
 
+/*Experience page */
+
+.etfos-image,
+.transcom-image {
+  height:200px;
+  width:450px;
+  margin-top: 10px;
+  padding-right:30px;
+
+}
+
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
-  
+
   .flex {
       display: -ms-flexbox;      /* TWEENER - IE 10 */
-      display: flex; 
+      display: flex;
       max-width: 1200px;
       -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -204,4 +225,3 @@ a.social:hover {
   }
 
 }
-
