@@ -9,12 +9,12 @@ body {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   color: #222;
-  background: #e28f00;
+  background: #e2e2e2;
 }
 
 h2,
 p {
-  color: #e28f00;
+  color: #e2e2e2;
 }
 /* Link Styles */
 
@@ -26,6 +26,9 @@ a:hover {
   color: #6633ff;
 }
 
+hr {
+  width: 80%;
+}
 /* Section Styles */
 
 .main-nav {
@@ -63,9 +66,9 @@ a:hover {
 
 header {
   text-align: center;
-  background:
-              linear-gradient(0deg, #e28f00, transparent),
-              url('images/winterfell.jpg') no-repeat top center ;
+  background: linear-gradient(#ffa949, transparent 90%),
+              linear-gradient(0deg, #e2e2e2, transparent),
+    #ffa949 url('images/winterfell.jpg') no-repeat center;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -85,8 +88,8 @@ header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
 }
 .tag {
-  background-color: #e28f00;
-  color: black;
+  background-color: #e2e2e2;
+  color: #000;
   padding: 10px;
   border-radius: 5px;
   display: table;
@@ -94,7 +97,7 @@ header .profile-image:hover {
 }
 .location {
   background-color: black;
-  color: #e28f00;
+  color: #e2e2e2;
 }
 .card {
   margin: 30px;
@@ -106,6 +109,11 @@ header .profile-image:hover {
   border-radius: 6px;
   transition: all .5s;
 }
+
+.card img {
+  width:100%;
+}
+
 .card:hover {
   background: #302d28;
 }
@@ -118,7 +126,7 @@ ul.skills {
 .skills li {
   border-radius: 6px;
   display: inline-block;
-  background: #776f61;
+  background: #0275ce;
   color: white;
   padding: 5px 10px;
   margin: 2px;
@@ -179,14 +187,7 @@ a.social:hover {
 
 /*Experience page */
 
-.etfos-image,
-.transcom-image {
-  height:200px;
-  width:450px;
-  margin-top: 10px;
-  padding-right:30px;
 
-}
 
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
